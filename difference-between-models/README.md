@@ -20,3 +20,12 @@ Context size is the number of tokens that a model can process at once. Small con
 
 This notebook starts with OpenLlama 2 7B, which has a 2K token context size. We'll generate a small number of tokens in our first pass then increase that on OpenLlama-2-7B and MPT-7B-Storywriter models.
 
+## 03 - finetuned variants.ipynb
+This notebook illustrates the difference between common fine-tunings of base models, including base, chat, and instruct.
+
+## 04 - text-generation vs text2text-generation
+Transformer models can be constructed with an encoder, a decoder, or both. The first 3 notebooks were text-generation focused and used decoder models. Decoders work well for pure generation but aren't as good as encoder-decoder models.
+
+We're going to compare openllama 2 text generation with Flan Alpaca T5 for summarization. You'll see that the latter model's ability to do sequnce to sequence generation makes it a better choice for summarization.
+
+
